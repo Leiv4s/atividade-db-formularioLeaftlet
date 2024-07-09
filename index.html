@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="map" id="map">
+
+    </div>
+
+    <div class="content">
+        <div class="form">
+            <form id="userForm">
+                <fieldset>
+                    <div class="campo">
+                        <label for="nome"> <strong>Nome</strong></label>
+                        <input type="text" nome="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email"> <strong>Email</strong></label>
+                        <input type="text" email="email" id="email" required>
+                    </div>
+                    <div class="botao">
+                        <button type="submit">Enviar Localização </button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="resultado">
+            <p id="showJSON"></p>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
